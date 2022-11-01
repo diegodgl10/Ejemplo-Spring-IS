@@ -1,0 +1,212 @@
+package com.example.models.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+/**
+ * Clase para representar un producto de Ciencias Top.
+ */
+@Entity
+@Table(name="productos")
+public class Producto implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	/* Nombre del producto. */
+	private String nombre;
+	@Column(name="nombre")
+	/* Codigo de longitud 12 del producto. */
+	private String codigo;
+	@Column(name="codigo")
+	/* Stock inicial del producto. */
+	private int stockInicial;
+	@Column(name="stockInicial")
+	/* Stock actual del prodcuto. */
+	private int currentStock;
+	@Column(name="currentStock")
+	/* Precio del prodcuto. */
+	private double precio;
+	@Column(name="precio")
+	/* Descripcion del prodcuto. */
+	private String descripcion;
+	@Column(name="descripcion")
+	/* Ruta de la imagen del prodcuto. */
+	private String imagen;
+	@Column(name="imagen")
+	/* Tipo del producto. */
+	private String tipo;
+	@Column(name="tipo")
+	/* Categoria del producto. */
+	private String categoria;
+	@Column(name="categoria")
+	/* Periodo de renta del producto. */
+	private int periodoRenta;
+	@Column(name="periodoRenta")
+
+	/**
+	 * Regresa el nombre del producto.
+	 * @return el nombre del producto.
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+
+	/**
+	 * Define el nuevo nombre del producto.
+	 * @param nombre el nuevo nombre del producto.
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * Regresa el codigo del producto.
+	 * @return el codigo del producto.
+	 */
+	public String getCodigo() {
+		return codigo;
+	}
+
+	/**
+	 * Define el nuevo codigo del producto.
+	 * @param codigo el nuevo codigo del producto.
+	 */
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	/**
+	 * Regresa el stock inicial del producto.
+	 * @return el stock inicial del producto.
+	 */
+	public int getStockInicial() {
+		return stockInicial;
+	}
+
+	/**
+	 * Define el nuevo stock inicial del producto.
+	 * @param stockInicial el nuevo stock inicial del producto.
+	 */
+	public void setStockInicial(int stockInicial) {
+		this.stockInicial = stockInicial;
+	}
+
+	/**
+	 * Regresa el stock actual del producto.
+	 * @return el stock actual del producto.
+	 */
+	public int getCurrentStock() {
+		return currentStock;
+	}
+
+	/**
+	 * Define el nuevo stock actual del producto.
+	 * @param currentStock el nuevo stock actual del producto.
+	 */
+	public void setCurrentStock(int currentStock) {
+		this.currentStock = currentStock;
+	}
+
+	/**
+	 * Regresa el precio del producto.
+	 * @return el precio del producto.
+	 */
+	public double getPrecio() {
+		return precio;
+	}
+
+	/**
+	 * Define el nuevo precio del producto.
+	 * @param precio el nuevo precio del producto.
+	 */
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+	/**
+	 * Regresa la descripcion del producto.
+	 * @return la descripcion del producto.
+	 */
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	/**
+	 * Define la nueva descripcion del producto.
+	 * @param descripcion la nueva descripcion del producto.
+	 */
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	/**
+	 * Regresa la ruta de la imagen del producto.
+	 * @return la ruta de la imagen del producto.
+	 */
+	public String getImagen() {
+		return imagen;
+	}
+
+	/**
+	 * Define la nueva ruta de la imagen del producto.
+	 * @param imagen la nueva ruta de la imagen del producto.
+	 */
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+	/**
+	 * Regresa el tipo del producto.
+	 * @return el tipo del producto.
+	 */
+	public String getTipo() {
+		return tipo;
+	}
+
+	/**
+	 * Define el nuevo tipo del producto.
+	 * @param tipo el nuevo tipo del producto.
+	 */
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	/**
+	 * Regresa la categoria del producto.
+	 * @return la categoria del producto.
+	 */
+	public String getCategoria() {
+		return categoria;
+	}
+
+	/**
+	 * Define la nueva categoria del producto.
+	 * @param categoria la nueva categoria del producto.
+	 */
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	/**
+	 * Regresa el perido de renta del producto.
+	 * @return el perido de renta del producto.
+	 */
+	public int getPeriodoRenta() {
+		return periodoRenta;
+	}
+
+	/**
+	 * Define el nuevo periodo de renta del producto.
+	 * @param periodoRenta el nuevo periodo de renta del producto.
+	 */
+	public void setPeriodoRenta(int periodoRenta) {
+		this.periodoRenta = periodoRenta;
+	}
+}

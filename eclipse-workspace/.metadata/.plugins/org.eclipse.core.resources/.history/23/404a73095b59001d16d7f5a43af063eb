@@ -1,0 +1,27 @@
+package com.example.models.entity;
+
+/** 
+ * Clase para representar un producto de Ciencias Top.
+ */
+public class Producto {
+    /* Nombre del producto. */
+    private String nombre;
+    /* Codigo de longitud 12 del producto. */
+    private String codigo;
+    /* Stock inicial del producto. */
+    private int stockInicial;
+    /* Stock actual del prodcuto. */
+    private int currentStock;
+    /* Precio del prodcuto. */
+    private double precio;
+    /* Descripcion del prodcuto. */
+    private String descripcion;
+    /* Ruta de la imagen del prodcuto. */
+    private String imagen;
+    /* Tipo del producto. */
+    private String tipo;
+    /* Categoria del producto. */
+    private String categoria;
+    /* Periodo de renta para el producto. */
+    private int periodoRenta;
+}

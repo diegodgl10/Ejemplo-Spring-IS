@@ -1,0 +1,5 @@
+package com.example.models.service;
+
+public interface IProductoService {
+
+}
